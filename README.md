@@ -30,5 +30,7 @@ Coloque o SD  no slot no Galileo.
 ## 2º Passo: Leitura de dados do sensor DHT11:
 
 Para extração dos dados de humidade e temperatura, será necessário a montagem de um circuito contendo um sensor DHT11, um potenciômetro ou um resistor com faixa de valores entre 4,7k e 10k ohms (No caso do potenciômetro, deve-se variar a resistência do mesmo até que seja possível o envio das informações, pois em alguns casos com uma resistência de 4,7k ohms não se consegue efetuar a leitura dos dados do sensor DHT11. O mesmo raciocínio deve ser utilizado para a escolha do valor correto do resitor caso prefira usar este) e um diodo 1N4007. Um exemplo de uma possível montagem pode ser visto abaixo.
+
 ![possível montagem](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=13aafbe77bdb748ee91ba9fb9d2924b30&authkey=AY6ohm1wdMnJByutQrv7i44)
+
 A utilização do sensor DHT no Galileo contém certas complicações. A primeira é que as bibliotecas do Arduino forem executadas no contexto do userspace do Linux, recebendo, então, uma prioridade diferente. Os relógios fixos e a contagem de laços não são aplicáveis ​​ao Galileo. A segunda consiste em que com apenas um fio, DHT e muitos outros dispositivos de um fio não funcionarão com o Galileo porque o mesmo demora muito tempo ao mudar um pino de uma direção para outra. Isso ocorre pois o Intel Galileo usa expansores IO para o gpio o qual controla a direção do pino e esses expansores IO estão conectados ao Galileo via I2C.
