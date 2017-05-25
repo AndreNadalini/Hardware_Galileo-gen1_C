@@ -9,6 +9,7 @@
 
 * [1º Passo: Instalar o Kit IoT Developer - Yocto](#passo1)
 * [2º Passo: Leitura de dados do sensor DHT11](#passo2)
+* [3º Passo: Conectando o Galileo a uma rede Ethernet](#passo3)
 
 
 <a name="passo1"></a>
@@ -36,3 +37,31 @@ Para extração dos dados de umidade e temperatura, será necessário a montagem
 A utilização do sensor DHT no Galileo contém certas complicações. A primeira é que as bibliotecas do Arduino forem executadas no contexto do userspace do Linux, recebendo, então, uma prioridade diferente. Os relógios fixos e a contagem de laços não são aplicáveis ​​ao Galileo. A segunda consiste em que com apenas um fio, DHT e muitos outros dispositivos de um fio não funcionarão com o Galileo porque o mesmo demora muito tempo ao mudar um pino de uma direção para outra. Isso ocorre pois o Intel Galileo usa expansores IO para o gpio o qual controla a direção do pino e esses expansores IO estão conectados ao Galileo via I2C.
 
 Devido aos obstáculos citados acima, foi necessário fazer algumas alterações nas bibliotecas do sensor DHT11. Tais bibliotecas modificadas podem ser encontradas [aqui](https://github.com/AndreNadalini/Hardware_Galileo-gen1_C/tree/master/Libraries%20for%20DHT).
+(Observação: A versão da IDE Arduino utilizada foi a 1.6.0 a qual pode ser baixada em [arduino.cc](https://www.arduino.cc/en/main/OldSoftwareReleases). Vale lembrar que foi necessário habilitar a placa Intel Galileo nesta edição.)
+
+<a name="passo3"></a>
+## 3º Passo: Conectando o Galileo a uma rede Ethernet:
+
+Para que a placa consiga enviar dados para a nuvem, é necessário que esta esteja na mesma rede ethernet que o seu computador. Conecte o cabo de rede na Intel Galileo através da porta, pois para acessar o Linux da placa precisamos antes descobrir o IP da mesma. Abra a IDE do Arduino e execute o seguinte código:
+
+```bash
+void setup() {
+  Serial.begin(9600);
+  //digite 'a' para mostrar o IP
+  while(Serial.read()!='a'){
+    Serial.println("hello");
+    delay(1000);
+  }
+  //ifconfig para serial monitor
+  system("ifconfig > /dev/ttyGS0");
+}
+ 
+void loop() {
+ 
+}
+```
+Abra o monitor serial no canto superior direito e digite 'a' para mostrar o IP da placa.
+
+![ip](https://cloud.githubusercontent.com/assets/17688443/25825135/29f54660-3418-11e7-8056-863d2a8f0807.png)
+
+O IP da placa esta dentro do retângulo vermelho como mostra a figura acima. Este IP será utilizado no código para o envio das informações do sensor, veremos isto logo a seguir.
