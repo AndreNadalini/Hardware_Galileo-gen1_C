@@ -10,6 +10,7 @@
 * [1º Passo: Instalar o Kit IoT Developer - Yocto](#passo1)
 * [2º Passo: Leitura de dados do sensor DHT11](#passo2)
 * [3º Passo: Conectando o Galileo a uma rede Ethernet](#passo3)
+* [4º Passo: Envio de dados do sensor DHT11 e conexão com o MQTTLens](#passo4)
 
 
 <a name="passo1"></a>
@@ -73,3 +74,8 @@ Abra o monitor serial no canto superior direito e digite 'a' para mostrar o IP d
 ![ip](https://cloud.githubusercontent.com/assets/17688443/25825135/29f54660-3418-11e7-8056-863d2a8f0807.png)
 
 O IP da placa esta dentro do retângulo vermelho como mostra a figura acima. Este IP será utilizado no código para o envio das informações do sensor, veremos isto logo a seguir.
+
+<a name="passo4"></a>
+## 4º Passo: Envio de dados do sensor DHT11 e conexão com o MQTTLens:
+
+Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT é necessário baixar a biblioteca PubSubClient. Esta pode ser encontrada no site http://pubsubclient.knolleary.net/ ou diretamente [aqui]()
