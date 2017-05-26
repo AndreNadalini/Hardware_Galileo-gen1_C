@@ -41,7 +41,7 @@ Devido aos obstáculos citados acima, foi necessário fazer algumas alterações
 
 O código utilizado apenas para a leitura dos dados do sensor DHT11 foi [este](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FLeitura%20de%20dados%20do%20sensor%20DHT11%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5). Abrindo o monitor serial, no canto superior direito, deve-se ter algo similar a seguinte imagem:
 
-![dados no monitor serial](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FDados%20enviados%20pelo%20sensor%20DHT11%2Ejpg&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![dados no monitor serial](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FDados%20enviados%20pelo%20sensor%20DHT11%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
 
 Como pode-se ver, algumas vezes aparece a seguinte informação, "Failed to read from DHT sensor". Estes erros são detectados ocasionalmente, quando os pulsos de bits não são medidos com precisão, mas isso é OK.
 
