@@ -82,4 +82,4 @@ Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT 
 
 ![MAC + IP + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMAC%20%2B%20IP%20%2B%20topic%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
 
-Como mostra a imagem acima, nesta parte do código deve-se colocar o endereço MAC da placa utilizada o qual, nas placas atuais, fica na parte superior da porta Ethernet, o endereço IP da placa que foi extraído no 3º passo deste tutorial <a name="passo3"></a>.
+Como mostra a imagem acima, nesta parte do código deve-se colocar o endereço MAC da placa utilizada o qual, nas placas atuais, fica na parte superior da porta Ethernet, o endereço IP da placa que foi extraído no [3º passo](<a name="passo3"></a>) deste tutorial.
