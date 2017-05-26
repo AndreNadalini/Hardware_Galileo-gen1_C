@@ -78,4 +78,8 @@ O IP da placa esta dentro do retângulo vermelho como mostra a figura acima. Est
 <a name="passo4"></a>
 ## 4º Passo: Envio de dados do sensor DHT11 e conexão com o MQTTLens:
 
-Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT é necessário baixar a biblioteca PubSubClient. Esta pode ser encontrada no site http://pubsubclient.knolleary.net/ ou diretamente [aqui](https://github.com/AndreNadalini/Hardware_Galileo-gen1_C/tree/master/PubSubClient).
+Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT é necessário baixar a biblioteca PubSubClient. Esta pode ser encontrada no site http://pubsubclient.knolleary.net/ ou diretamente [aqui](https://github.com/AndreNadalini/Hardware_Galileo-gen1_C/tree/master/PubSubClient). O código utilizado para o envio de dados foi [este](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5).
+
+![MAC + IP + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMAC%20%2B%20IP%20%2B%20topic%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+
+Como mostra a imagem acima, nesta parte do código deve-se colocar o endereço MAC da placa utilizada o qual, nas placas atuais, fica na parte superior da porta Ethernet, o endereço IP da placa que foi extraído no 3º passo deste tutorial <a name="passo3"></a>.
