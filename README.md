@@ -78,4 +78,4 @@ O IP da placa esta dentro do retângulo vermelho como mostra a figura acima. Est
 <a name="passo4"></a>
 ## 4º Passo: Envio de dados do sensor DHT11 e conexão com o MQTTLens:
 
-Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT é necessário baixar a biblioteca PubSubClient. Esta pode ser encontrada no site http://pubsubclient.knolleary.net/ ou diretamente [aqui]()
+Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT é necessário baixar a biblioteca PubSubClient. Esta pode ser encontrada no site http://pubsubclient.knolleary.net/ ou diretamente [aqui](https://github.com/AndreNadalini/Hardware_Galileo-gen1_C/tree/master/PubSubClient).
