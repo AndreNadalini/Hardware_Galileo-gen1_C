@@ -44,7 +44,7 @@ Devido aos obstáculos citados acima, foi necessário fazer algumas alterações
 
 O código utilizado apenas para a leitura dos dados do sensor DHT11 foi [este](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FLeitura%20de%20dados%20do%20sensor%20DHT11%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5). Abrindo o monitor serial, no canto superior direito, deve-se ter algo similar a seguinte imagem:
 
-![dados no monitor serial](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FDados%20enviados%20pelo%20sensor%20DHT11%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![dados no monitor serial](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=1aa2bf0ffe506473d86e726d45989e26d&authkey=AfsgkOKAwpT7HZQuwKM28K4).
 
 Como pode-se ver, algumas vezes aparece a seguinte informação, "Failed to read from DHT sensor". Estes erros são detectados ocasionalmente, quando os pulsos de bits não são medidos com precisão, mas isso é OK.
 
@@ -82,7 +82,7 @@ Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT 
 
 ![MAC + IP + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMAC%20%2B%20IP%20%2B%20topic%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
 
-Como mostra a imagem acima, nesta parte do código deve-se colocar o endereço MAC da placa utilizada o qual, nas placas atuais, fica na parte superior da porta Ethernet, o endereço IP da placa que foi extraído no [3º Passo](#passo3) deste tutorial e o tópico utilizado no broker MQQTLens. Adicione a extensão MQTTLens ao seu navegador Chrome pelo link: https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm. Após instalado abra e adicione uma nova conexão clicando em "+":
+Como mostra a imagem acima, nesta parte do código deve-se colocar o endereço MAC da placa utilizada o qual, nas placas atuais, fica na parte superior da porta Ethernet, o endereço IP da placa que foi extraído no [3º Passo](#passo3) deste tutorial e o tópico utilizado no broker MQTTLens. Adicione a extensão MQTTLens ao seu navegador Chrome pelo link: https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm. Após instalado abra e adicione uma nova conexão clicando em "+":
 
 ![MQTTLens](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMQTTLens%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
 
@@ -92,4 +92,4 @@ Faça as seguintes modificações, e salve, como mostra a figura abaixo.
 
 Agora configure o tópico para o mesmo que o Galileo está madando as informação do sensor; de acordo com o [código exemplo utilizado](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5), o tópico é "microcontroladores". Em seguida, clique em "SUBSCRIBE".
 
-![MQQTLens + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMQTTLens%20%2B%20topic%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![MQTTLens + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMQTTLens%20%2B%20topic%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
