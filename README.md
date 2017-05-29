@@ -94,7 +94,7 @@ Agora configure o tópico para o mesmo que o Galileo está madando as informaç�
 
 ![MQTTLens + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=171a8031e38754d18b6801e9714ec3b8f&authkey=Abhr90_KzNGCnPKfAbliBjc).
 
-Pronto, o broker já pode receber suas mensagens! Seguindo os passos descritos acima juntamente com o [código exemplo utilizado](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5), deve-se receber mensagens similares com as que estão nas figuras abaixo, tanto no MQTTLens quanto no monitor serial (canto superior direito).
+Pronto, o broker já pode receber suas mensagens!! Seguindo os passos descritos acima juntamente com o [código exemplo utilizado](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5), deve-se receber mensagens similares com as que estão nas figuras abaixo, tanto no MQTTLens quanto no monitor serial (canto superior direito).
 
 ![saída MQTTLens](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=11d6a7b0e19154021a4a66d23f71f98cd&authkey=AaK51ihxThQlMZYtRS7ZUqI).
 
