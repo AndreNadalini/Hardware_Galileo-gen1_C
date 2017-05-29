@@ -80,16 +80,16 @@ O IP da placa esta dentro do retângulo vermelho como mostra a figura acima. Est
 
 Primeiramente, para que seja possível enviar dados utilizando o protocolo MQTT é necessário baixar a biblioteca PubSubClient. Esta pode ser encontrada no site http://pubsubclient.knolleary.net/ ou diretamente [aqui](https://github.com/AndreNadalini/Hardware_Galileo-gen1_C/tree/master/PubSubClient). O código utilizado para o envio de dados foi [este](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5).
 
-![MAC + IP + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMAC%20%2B%20IP%20%2B%20topic%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![MAC + IP + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=1aba1f92da1ac40a6bd689cbea9a1bede&authkey=AWv8wfOktxxzlkZCv3A5PuU).
 
 Como mostra a imagem acima, nesta parte do código deve-se colocar o endereço MAC da placa utilizada o qual, nas placas atuais, fica na parte superior da porta Ethernet, o endereço IP da placa que foi extraído no [3º Passo](#passo3) deste tutorial e o tópico utilizado no broker MQTTLens. Adicione a extensão MQTTLens ao seu navegador Chrome pelo link: https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm. Após instalado abra e adicione uma nova conexão clicando em "+":
 
-![MQTTLens](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMQTTLens%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![MQTTLens](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=13fb875afb2e84857ba2479553dc8698e&authkey=AdsejzNkSuwDEDSNNyriU2o).
 
 Faça as seguintes modificações, e salve, como mostra a figura abaixo.
 
-![MQTTLens + mudanças](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMQTTLens%20%2B%20Mudancas%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![MQTTLens + mudanças](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=15656d63520b441e080b28c28305d1a15&authkey=Ae_0fEFq2sFk_GXLXNrnDx4).
 
 Agora configure o tópico para o mesmo que o Galileo está madando as informação do sensor; de acordo com o [código exemplo utilizado](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5), o tópico é "microcontroladores". Em seguida, clique em "SUBSCRIBE".
 
-![MQTTLens + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FMQTTLens%20%2B%20topic%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![MQTTLens + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=171a8031e38754d18b6801e9714ec3b8f&authkey=Abhr90_KzNGCnPKfAbliBjc).
