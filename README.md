@@ -40,7 +40,7 @@ A utilização do sensor DHT no Galileo contém certas complicações. A primeir
 Devido aos obstáculos citados acima, foi necessário fazer algumas alterações nas bibliotecas do sensor DHT11. Tais bibliotecas modificadas podem ser encontradas [aqui](https://github.com/AndreNadalini/Hardware_Galileo-gen1_C/tree/master/Libraries%20for%20DHT).
 (Observação: A versão da IDE Arduino utilizada foi a 1.6.0 a qual pode ser baixada em [arduino.cc](https://www.arduino.cc/en/main/OldSoftwareReleases). Vale lembrar que foi necessário habilitar a placa Intel Galileo nesta edição.)
 
-![IDE Arduíno + Galileo](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FIDE%20Arduino%20%2B%20Galileo%2Epng&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments).
+![IDE Arduíno + Galileo](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=1fba858530e234a3f92b43a5b2f27dfe0&authkey=Adw5xK7CuuHZ67kGJx3O1bk).
 
 O código utilizado apenas para a leitura dos dados do sensor DHT11 foi [este](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FLeitura%20de%20dados%20do%20sensor%20DHT11%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5). Abrindo o monitor serial, no canto superior direito, deve-se ter algo similar a seguinte imagem:
 
