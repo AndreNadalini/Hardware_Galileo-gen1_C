@@ -71,7 +71,7 @@ void loop() {
 ```
 Abra o monitor serial no canto superior direito e digite 'a' para mostrar o IP da placa.
 
-![ip](https://cloud.githubusercontent.com/assets/17688443/25825135/29f54660-3418-11e7-8056-863d2a8f0807.png)
+![ip](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=15a958a602cae46be9dbf0bcd13c65ccf&authkey=Af54Lu8bNeJOmUc4OlYX2jM)
 
 O IP da placa esta dentro do retângulo vermelho como mostra a figura acima. Este IP será utilizado no código para o envio das informações do sensor, veremos isto logo a seguir.
 
@@ -93,3 +93,5 @@ Faça as seguintes modificações, e salve, como mostra a figura abaixo.
 Agora configure o tópico para o mesmo que o Galileo está madando as informação do sensor; de acordo com o [código exemplo utilizado](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5), o tópico é "microcontroladores". Em seguida, clique em "SUBSCRIBE".
 
 ![MQTTLens + topic](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/guestaccess.aspx?docid=171a8031e38754d18b6801e9714ec3b8f&authkey=Abhr90_KzNGCnPKfAbliBjc).
+
+Pronto, o broker já pode receber suas mensagens! Seguindo os passos descritos acima juntamente com o [código exemplo utilizado](https://posinatel-my.sharepoint.com/personal/andrep_get_inatel_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments%2FEnviando%20dados%20do%20sensor%2Etxt&parent=%2Fpersonal%2Fandrep_get_inatel_br%2FDocuments&p=5), deve-se receber mensagens similares com as que estão nas figuras abaixo, tanto no MQTTLens quanto no monitor serial (canto superior direito).
